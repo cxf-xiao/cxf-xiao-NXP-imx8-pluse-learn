@@ -1,0 +1,19 @@
+YOCOTO
+
+Host setup
+$ sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio 
+  python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2
+  libegl1-mesa libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev zstd liblz4-tool  (与手册上的不同)
+
+Docker
+
+
+repo
+fatal: Cannot get https://gerrit.googlesource.com/git-repo/clone.bundle
+  在命令中为 repo 设置国内镜像更新地址，在原有命令基础上添加如下命令：
+  --repo-url=https://gerrit-googlesource.lug.ustc.edu.cn/git-repo
+
+fatal: unable to auto-detect email address (got 'root@cxf-VM.(none)')
+
+
+  
