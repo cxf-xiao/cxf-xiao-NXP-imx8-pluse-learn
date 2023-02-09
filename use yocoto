@@ -9,11 +9,24 @@ Docker
 
 
 repo
-fatal: Cannot get https://gerrit.googlesource.com/git-repo/clone.bundle
-  在命令中为 repo 设置国内镜像更新地址，在原有命令基础上添加如下命令：
-  --repo-url=https://gerrit-googlesource.lug.ustc.edu.cn/git-repo
+    fatal: Cannot get https://gerrit.googlesource.com/git-repo/clone.bundle
+      在命令中为 repo 设置国内镜像更新地址，在原有命令基础上添加如下命令：
+      --repo-url=https://gerrit-googlesource.lug.ustc.edu.cn/git-repo
+sudo repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-kirkstone -m imx-5.15.71-2.2.0.xml --repo-url=https://gerrit-googlesource.lug.ustc.edu.cn/git-repo
 
-fatal: unable to auto-detect email address (got 'root@cxf-VM.(none)')
+    error.GitError: manifests var: Committer identity unknown
+
+    *** Please tell me who you are.
+
+    Run
+
+      git config --global user.email "you@example.com"
+      git config --global user.name "Your Name"
+
+    to set your account's default identity.
+    Omit --global to set the identity only in this repository.
+
+    fatal: unable to auto-detect email address (got 'root@cxf-VM.(none)')
 
 
   
