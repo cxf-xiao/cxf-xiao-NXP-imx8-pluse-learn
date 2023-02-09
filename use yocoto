@@ -9,6 +9,16 @@ Docker
 
 
 repo
+        repo init -u <URL> [<OPTIONS>]
+        -u：指定manifest项目清单库地址。
+
+        -m，–manifest-name：指定manifests库中的清单文件，默认为maniftests/default.xml。
+
+        -b， –manifest-branch：指定manifest仓的分支，默认为master分支。
+
+        -g：指定manifests库中的组来下载代码，默认为all。
+
+
     fatal: Cannot get https://gerrit.googlesource.com/git-repo/clone.bundle
       在命令中为 repo 设置国内镜像更新地址，在原有命令基础上添加如下命令：
       --repo-url=https://gerrit-googlesource.lug.ustc.edu.cn/git-repo
