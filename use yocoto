@@ -1,4 +1,4 @@
-YOCOTO
+use YOCOTO 建立开发环境
 
 Host setup
 $ sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio 
